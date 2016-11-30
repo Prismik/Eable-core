@@ -1,0 +1,16 @@
+Installation requirements:
+  - [mininum] Ruby 2.0.0p648
+  - gem sinatra
+  - gem httparty
+  - port 8080 open
+
+To install the gems:
+  sudo gem install sinatra
+  sudo gem install httparty
+
+Routes available:
+  - get '/orders' -> returns a stringified version of the current orders
+  - post '/orders/:tablet_id' -> Adds an order to the list and notify the display, returns a status + the average time
+
+To run the server:
+  ruby [Eable-Core location]/lib/bin/server.rb
